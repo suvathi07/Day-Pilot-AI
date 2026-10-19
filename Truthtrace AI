@@ -1,0 +1,134 @@
+# 🔎 TRUTHTRACE AI — Intelligent Fake News Detection & Source Tracing
+
+**Verify before you share. Discover the evidence behind every claim.**
+
+TRUTHTRACE AI is an AI-powered misinformation verification platform designed to help users evaluate the credibility of online news, social media claims, images, and other digital content. It combines claim verification, evidence collection, source tracing, and potential manipulated-media detection in a single interface.
+
+## 🚨 Problem Statement
+
+Fake news and manipulated media can spread rapidly through social media and messaging platforms. Manual fact-checking takes time, and users often struggle to distinguish reliable information from misleading claims.
+
+TRUTHTRACE AI aims to make preliminary fact-checking faster, more accessible, and easier to understand.
+
+## 💡 Proposed Solution
+
+The platform allows users to submit a text claim, news URL, or image for analysis. It then presents a credibility score, supporting and contradicting evidence, source information, and a clear explanation of the result.
+
+### ✨ Key Features
+
+- **Multi-Format Input:** Submit a news claim, article URL, or image.
+- **AI Credibility Score:** Display an estimated credibility score from 0–100.
+- **Claim Verification:** Identify key claims and compare them with available evidence.
+- **Evidence Explorer:** Present supporting and contradicting information.
+- **Source Tracing:** Show available source details and a traceable evidence trail.
+- **Deepfake Screening:** Demonstrate potential image manipulation indicators.
+- **Explainable Results:** Explain why a claim may be credible, misleading, false, or inconclusive.
+- **Uncertainty Handling:** Flag cases where there is insufficient evidence instead of making unsupported conclusions.
+- **Verification History:** Allow users to revisit previous analyses in the prototype.
+
+## 🔄 How It Works
+
+1. **Submit:** Enter a claim, article link, or upload an image.
+2. **Extract:** Identify the main claim and relevant information.
+3. **Verify:** Compare the claim against available trusted sources.
+4. **Trace:** Display source details and evidence connections.
+5. **Analyze Media:** Screen supported images for potential manipulation indicators.
+6. **Report:** Present a credibility score, evidence, and an explanation.
+
+## 🏗️ System Architecture
+
+```text
+User
+  |
+  v
+React Frontend
+  |
+  v
+FastAPI Backend
+  |
+  +--> Claim Extraction and NLP
+  |
+  +--> Trusted Source Verification
+  |
+  +--> Evidence Retrieval and Source Tracing
+  |
+  +--> Image Manipulation Screening
+  |
+  v
+Credibility Analysis
+  |
+  v
+Explainable Verification Report
+```
+
+## 🛠️ Proposed Technology Stack
+
+| Component | Technology |
+|---|---|
+| Frontend | React |
+| Backend | Python, FastAPI |
+| NLP and claim analysis | BERT-based models |
+| Model development | PyTorch |
+| Image analysis | OpenCV |
+| Data sources | Trusted publications and fact-checking sources |
+| Research datasets | FEVER, LIAR |
+| Version control | Git and GitHub |
+
+*These are proposed technologies; actual implementation depends on the final prototype and available integrations.*
+
+## 🎯 Target Users
+
+- Students and the general public
+- Journalists and fact-checkers
+- Educational institutions
+- Media organizations
+- Researchers studying misinformation
+
+## 🌍 Impact and Benefits
+
+- Encourages responsible information sharing.
+- Helps users understand the evidence behind online claims.
+- Reduces the effort required for preliminary fact-checking.
+- Supports journalists in collecting relevant evidence.
+- Raises awareness of misleading content and potential digital manipulation.
+
+## ⚠️ Limitations and Responsible Use
+
+A credibility score is an estimate, not proof that a claim is true or false. Results depend on source quality, evidence availability, and model accuracy. Image manipulation screening may produce false positives or miss sophisticated edits.
+
+The system should show citations where available, communicate uncertainty, and avoid presenting unverified conclusions as facts. Human review is recommended for high-impact decisions.
+
+## 🚀 Prototype Roadmap
+
+- [ ] Build the responsive user interface.
+- [ ] Implement claim, URL, and image input screens.
+- [ ] Create an explainable credibility report.
+- [ ] Add evidence and source-tracing views.
+- [ ] Integrate real verification APIs or models.
+- [ ] Add image analysis and verification history.
+- [ ] Evaluate performance using appropriate datasets.
+
+## 🔬 Research References
+
+- [FEVER: Fact Extraction and VERification](https://fever.ai/)
+- [LIAR Dataset — Research paper](https://aclanthology.org/P17-2067/)
+- [BERT — Research paper](https://aclanthology.org/N19-1423/)
+- [PyTorch Documentation](https://pytorch.org/docs/)
+- [FastAPI Documentation](https://fastapi.tiangolo.com/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+
+## 👥 Team
+
+**Team Name:** Tech Titans *(replace if your registered team name is different)*
+
+**Project:** TRUTHTRACE AI
+
+**Category:** Software
+
+## 📄 License
+
+This project may be released under the MIT License. Add a `LICENSE` file before claiming that the repository is officially licensed.
+
+---
+
+**TRUTHTRACE AI — Think critically. Verify digitally. Share responsibly.**
